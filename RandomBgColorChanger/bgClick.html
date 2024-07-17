@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <h1>click the start button to change random background color of the page</h1>
+   <button id="start">Start</button>
+   <button id="stop">Stop</button>
+
+   <script>
+    const startButton = document.getElementById('start')
+    const stopButton = document.getElementById('stop')
+    const randomColor = function(){
+        const hex = '0123456789ABCDEF'
+        let color = '#'
+        for(let i = 0; i < 6; i++){
+            color += hex[Math.floor(Math.random() * 16)]
+        }
+        return color
+    }
+    let interval
+    const startBgChange = function() {
+      if(!interval){
+        interval = setInterval(ab,1000)
+      }
+      
+    }
+    function ab(){
+        document.body.style.backgroundColor = randomColor()
+    }
+
+    
+
+    startButton.addEventListener('click',startBgChange)
+    stopButton.addEventListener('click',() => {
+        clearInterval(interval)
+        interval = null
+    })
+   </script>
+</body>
+</html>
