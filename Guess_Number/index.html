@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-slate-600">
+    <div class="text-center">
+        <div class="m-6">
+            <h1 class="bg-black text-2xl text-white text-center">Number Guessing game</h1> <br>
+            <p class="font-mono text-xl font-bold">Try and guess a random number between 1 and 100</p>
+            <p class="font-mono text-xl font-bold">You have 10 attempts to guess the right number.</p>
+        </div>
+
+        <form class="m-6">
+            <label class="text-3xl font-bold underline bg-black text-yellow-300" id="guess">Guess a number</label> <br>
+            <input type="text" id="guessField" class="m-5 guessField"><br>
+            <input type="submit" class="bg-white text-black border-2 border-black p-2 font-bold rounded-lg guessSubmit" id="subt" value="submit"> 
+        </form>
+        <div class="resultParas">
+            <p class="m-3 text-lg font-bold">Previous Guess: <span id="guesses"></span></p>
+            <p class="text-lg font-bold">Guesses remaining: <span id="lastResult">10</span></p>
+            <p class="text-xl font-bold text-yellow-500" id="lowOrHi">abhi</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
