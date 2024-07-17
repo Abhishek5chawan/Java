@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;background-color: black; color: white;">
+    <div id="project">
+        <div id="key">Press any key to watch magic</div>
+        <div id="insert">
+        
+    </div>
+</div>
+
+<script>
+    
+    const insert = document.getElementById('insert')
+    
+    window.addEventListener('keydown',(e) => {
+        insert.innerHTML = `
+            <table border='border' style="padding: 10px; position: absolute; left: 43%; top: 40%">
+                <tr>
+                    <th>key</th>
+                    <th>key code</th>
+                    <th>code</th>
+                </tr>
+                <tr>
+                    <th>${e.key}</th>
+                    <th>${e.keyCode}</th>
+                    <th>${e.code}</th>
+                </tr>
+                </table>
+        `
+    })
+</script>
+</body>
+</html>
