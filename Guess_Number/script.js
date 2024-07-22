@@ -1,5 +1,4 @@
 const randomNumber = parseInt(Math.random() * 100 + 1)
-console.log(randomNumber);
 const userInput = document.querySelector('#guessField')
 const userSubmit = document.querySelector('#subt')
 const preGuess = document.querySelector('#guesses')
