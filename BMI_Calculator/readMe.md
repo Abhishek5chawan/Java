@@ -1,5 +1,6 @@
 <h1>BMI Calculator</h1>
 <h2>Screenshots</h2>
 
-![Screenshot (59)](https://github.com/user-attachments/assets/182fa166-8c45-4c51-9b83-7d7a462121ab)
-![Screenshot (60)](https://github.com/user-attachments/assets/c526e0ef-b229-47e5-9c50-3701c5061797)
+
+![b](https://github.com/user-attachments/assets/bdbf0db9-3575-452a-a4c0-08ae39ef91d5)
+![m](https://github.com/user-attachments/assets/ae8e2e4b-ef7a-4a47-84ac-7b7949ffb550)
